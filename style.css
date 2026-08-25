@@ -3,10 +3,10 @@
 ================================= */
 
 :root {
-    --rosa-claro: #f8e6eb;
-    --rosa: #d9a6b3;
-    --rosa-escuro: #b97889;
-    --rosa-suave: #fdf5f7;
+    --rosa-claro: #f7d4df;
+    --rosa: #d98fa4;
+    --rosa-escuro: #bd667f;
+    --rosa-suave: #fdf0f4;
 
     --dourado: #b99a5b;
     --dourado-claro: #d8bf86;
@@ -15,7 +15,7 @@
     --texto: #51454a;
     --texto-claro: #786c71;
 
-    --sombra: 0 10px 35px rgba(100, 60, 70, 0.08);
+    --sombra: 0 10px 35px rgba(100, 60, 70, 0.10);
 }
 
 * {
