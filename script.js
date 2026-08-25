@@ -69,3 +69,34 @@ form.addEventListener("submit", function (event) {
     window.open(url, "_blank");
 
 });
+// =================================
+// COPIAR CHAVE PIX
+// =================================
+
+function copiarPix() {
+
+    const pix = document.getElementById("pixKey").innerText;
+
+    navigator.clipboard.writeText(pix);
+
+    alert("Chave PIX copiada! 💗");
+}
+
+
+// =================================
+// ABRIR SEÇÕES
+// =================================
+
+function abrirSecao(secao) {
+
+    const elemento = document.getElementById(secao);
+
+    if (elemento) {
+
+        elemento.scrollIntoView({
+            behavior: "smooth"
+        });
+
+    }
+
+}
