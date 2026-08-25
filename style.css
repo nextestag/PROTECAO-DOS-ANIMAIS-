@@ -630,3 +630,330 @@ footer p {
         gap: 30px;
     }
 }
+/* ==============================
+   CARDS CLICÁVEIS
+================================= */
+
+.clickable-card {
+    cursor: pointer;
+}
+
+.card-button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 9px 18px;
+    border-radius: 20px;
+    border: 1px solid var(--dourado);
+    background: white;
+    color: var(--dourado);
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-button:hover {
+    background: var(--dourado);
+    color: white;
+}
+
+
+/* ==============================
+   ANIMAIS
+================================= */
+
+.animal-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.animals {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.animal-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #f0dce1;
+    box-shadow: var(--sombra);
+    transition: 0.3s;
+}
+
+.animal-card:hover {
+    transform: translateY(-6px);
+}
+
+.animal-card img {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    display: block;
+}
+
+.animal-info {
+    padding: 25px;
+}
+
+.animal-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    color: var(--rosa-escuro);
+}
+
+.animal-info p {
+    color: var(--texto-claro);
+    font-size: 13px;
+    margin: 8px 0;
+}
+
+.animal-info .btn {
+    margin-top: 12px;
+}
+
+
+/* ==============================
+   GALERIA
+================================= */
+
+.place-gallery {
+    margin-top: 100px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
+}
+
+
+/* ==============================
+   APADRINHAMENTO
+================================= */
+
+.sponsor-section {
+    padding: 100px 0;
+    background: var(--rosa-suave);
+}
+
+.sponsor-box {
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: var(--sombra);
+}
+
+.sponsor-text {
+    padding: 60px;
+}
+
+.big-heart {
+    font-size: 55px;
+    color: var(--rosa-escuro);
+}
+
+.sponsor-text h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--rosa-escuro);
+    font-size: 32px;
+    margin: 10px 0 15px;
+}
+
+.sponsor-text p {
+    color: var(--texto-claro);
+    margin-bottom: 25px;
+}
+
+.sponsor-image {
+    min-height: 400px;
+}
+
+.sponsor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ==============================
+   PIX
+================================= */
+
+.pix-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.pix-box {
+    background: linear-gradient(
+        135deg,
+        var(--rosa-claro),
+        #fbeef2
+    );
+
+    border-radius: 30px;
+    padding: 60px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.pix-label {
+    color: var(--dourado);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.pix-content h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--rosa-escuro);
+    font-size: 42px;
+    margin: 10px 0 15px;
+}
+
+.pix-content > p {
+    color: var(--texto);
+    max-width: 600px;
+}
+
+.pix-key {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 25px;
+    border: 1px solid #ead6dc;
+}
+
+.pix-key span {
+    display: block;
+    color: var(--dourado);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.pix-key strong {
+    display: block;
+    margin: 8px 0 15px;
+    font-size: 14px;
+    word-break: break-all;
+}
+
+.copy-button {
+    border: none;
+    background: var(--rosa-escuro);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.copy-button:hover {
+    background: #a95872;
+}
+
+.pix-thanks {
+    margin-top: 20px;
+    font-size: 13px;
+    font-style: italic;
+}
+
+.qr-area {
+    text-align: center;
+}
+
+.qr-placeholder {
+    background: white;
+    padding: 20px;
+    width: 230px;
+    height: 230px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: var(--sombra);
+}
+
+.qr-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.qr-area p {
+    font-size: 12px;
+    color: var(--texto-claro);
+    margin-top: 15px;
+}
+
+
+/* ==============================
+   RESPONSIVO
+================================= */
+
+@media (max-width: 850px) {
+
+    .animals {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sponsor-box,
+    .pix-box {
+        grid-template-columns: 1fr;
+    }
+
+    .sponsor-image {
+        min-height: 300px;
+    }
+
+    .pix-box {
+        padding: 35px;
+    }
+}
+
+
+@media (max-width: 550px) {
+
+    .animals,
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .sponsor-text {
+        padding: 35px 25px;
+    }
+
+    .pix-box {
+        padding: 30px 20px;
+    }
+
+    .pix-content h2 {
+        font-size: 32px;
+    }
+
+    .qr-placeholder {
+        width: 200px;
+        height: 200px;
+    }
+}
